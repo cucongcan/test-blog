@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to CanCC's Blog!"
 date:   2018-01-25 10:09:37 +0700
 categories: jekyll update
 ---
