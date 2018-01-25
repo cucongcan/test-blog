@@ -53,5 +53,5 @@ jobs:
       - run:
           name: Deploy
           # run 'firebase login:ci' in your local terminal to get token
-          command: firebase deploy --token "1/H0k0awhqgLYnEDb7vgKG8tSJKMQARZ7om3_QiG7nATE"
-          # command: firebase deploy --token=1/H0k0awhqgLYnEDb7vgKG8tSJKMQARZ7om3_QiG7nATE --non-interactive
+          # command: firebase deploy --token "1/H0k0awhqgLYnEDb7vgKG8tSJKMQARZ7om3_QiG7nATE"
+          command: firebase deploy --token=1/H0k0awhqgLYnEDb7vgKG8tSJKMQARZ7om3_QiG7nATE --non-interactive
