@@ -24,13 +24,17 @@ jobs:
           - v2-dependencies-
 
       - run:
+          name: Install Bundler
+          command: gem install bundler
+
+      - run:
           name: Ruby dependencies
           command: bundle install
 
       - run:
           name: Node dependencies
-          # command: npm install -g firebase-tools
-          command: sudo npm install -g firebase-tools@3.9.1 --unsafe-perm
+          command: npm install -g firebase-tools
+          # command: sudo npm install -g firebase-tools@3.9.1 --unsafe-perm
 
       - save_cache:
           paths:
@@ -46,6 +50,8 @@ jobs:
           name: Test
           command: bundle exec htmlproofer ./_site --check-html --disable-external
 
-      # - run:
-      #     name: Deploy
-      #     command: firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+      - run:
+          name: Deploy
+          # run 'firebase login:ci' in your local terminal to get token
+          command: firebase deploy --token "1/H0k0awhqgLYnEDb7vgKG8tSJKMQARZ7om3_QiG7nATE"
+          # command: firebase deploy --token=1/H0k0awhqgLYnEDb7vgKG8tSJKMQARZ7om3_QiG7nATE --non-interactive
