@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Title"
+title:  "What a wonderful day!"
 date:   2018-01-26 09:58:37 +0700
 categories: jekyll update
 ---
